@@ -3,7 +3,7 @@ var bnum = require('bisecting-numbers')()
 function between (lo, hi) {
   // base case
   if (lo === between.lo && hi === between.hi) {
-    return bnum.fromInteger(0)
+    return bnum.zero()
   }
 
   // right and left edges

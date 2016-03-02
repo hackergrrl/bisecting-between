@@ -1,17 +1,16 @@
 {
-  "name": "between2",
-  "description": "produces a unique id between two other given ids",
+  "name": "bisecting-between",
+  "description": "Produces a unique value that sorts between two other given values.",
   "version": "0.0.0",
   "repository": {
-    "url": "git://github.com/noffle/between2.git"
+    "url": "git://github.com/noffle/bisecting-between.git"
   },
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "bisecting-numbers": "0.0.1",
-    "numbase": "^0.1.1"
+    "bisecting-numbers": "^0.1.0"
   },
   "devDependencies": {
     "tape": "*"
