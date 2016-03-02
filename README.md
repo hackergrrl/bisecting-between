@@ -94,6 +94,10 @@ Returns a [bisecting number](https://github.com/noffle/bisecting-numbers) that
 is between two other bisecting numbers that will always sort as between `lo` and
 `hi`.
 
+### between.lo, between.hi
+
+Fixed values that symbolize the absolute lowest and highest, respectively.
+
 ## install
 
 With [npm](https://npmjs.org/) installed, run
