@@ -83,9 +83,9 @@ A.1
 
 ### var between = BisectingBetween(alphabet)
 
-Returns an object that exposes a `between()` method on the given string
-`alphabet` (where `alphabet.charAt(0)` is the zero value, the next is 1, etc).
-If not provided, the alphabet is the string
+Returns a function (that generates values between two other values) across the
+given string `alphabet` (where `alphabet.charAt(0)` is the zero value, the next
+is 1, etc). If not provided, the alphabet is the string
 `'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'`.
 
 ### between(lo, hi)
