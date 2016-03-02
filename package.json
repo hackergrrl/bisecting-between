@@ -1,7 +1,7 @@
 {
   "name": "bisecting-between",
   "description": "Produces a unique value that sorts between two other given values.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "git://github.com/noffle/bisecting-between.git"
   },
