@@ -25,8 +25,8 @@ function between (lo, hi) {
     return loInc
   }
 
-  var lolen = bnum.segments(lo).length
-  var hilen = bnum.segments(hi).length
+  var lolen = lo.split('.').length
+  var hilen = hi.split('.').length
 
   // no space between lo and hi ==> BRANCH!
   if (lolen === hilen) {
