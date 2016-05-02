@@ -4,7 +4,11 @@ var BisectingBetween = require('../index')
 test('basic', function (t) {
   var between = BisectingBetween()
 
-  t.equals(between(), '0')
+  t.notEquals(between(), '0')
+
+  t.equals(between('0', between.hi), '1')
+
+  t.equals(between(between.lo, '0'), '-1')
 
   t.equals(between('A', 'B'), 'A.0')
 

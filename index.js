@@ -5,11 +5,17 @@ function BisectingBetween (chars) {
 
   var between = function (lo, hi) {
     // base cases
-    if (lo === undefined && hi === undefined) {
-      return bnum.zero()
+    if (!lo && !hi) {
+      return bnum.inc(bnum.zero())
     }
     if (lo === between.lo && hi === between.hi) {
-      return bnum.zero()
+      return bnum.inc(bnum.zero())
+    }
+    if (!lo) {
+      lo = between.lo
+    }
+    if (!hi) {
+      hi = between.hi
     }
 
     // right and left edges
@@ -45,8 +51,8 @@ function BisectingBetween (chars) {
     }
   }
 
-  between.lo = 0
-  between.hi = 1
+  between.lo = chars ? chars[0] : '0'
+  between.hi = chars ? chars[chars.length - 1] : 'z'
 
   return between
 }
