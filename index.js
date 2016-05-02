@@ -53,6 +53,7 @@ function BisectingBetween (chars) {
 
   between.lo = chars ? chars[0] : '0'
   between.hi = chars ? chars[chars.length - 1] : 'z'
+  between.numbers = bnum
 
   return between
 }
