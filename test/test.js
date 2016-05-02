@@ -8,6 +8,9 @@ test('basic', function (t) {
 
   t.equals(between('0', between.hi), '1')
 
+  t.equals(between('-1', '1'), '-1.0')
+  t.equals(between('-1.0', '1'), '-1.1')
+
   t.equals(between(between.lo, '0'), '-1')
 
   t.equals(between('A', 'B'), 'A.0')

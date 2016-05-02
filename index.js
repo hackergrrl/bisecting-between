@@ -33,7 +33,7 @@ function BisectingBetween (chars) {
 
     // there is space in between lo and hi
     var loInc = bnum.inc(lo)
-    if (bnum.compare(loInc, hi) === -1) {
+    if (bnum.compare(loInc, hi) === -1 && loInc !== between.lo) {
       return loInc
     }
 
