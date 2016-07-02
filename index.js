@@ -23,7 +23,7 @@ function BisectingBetween (chars) {
       return bnum.inc(lo)
     }
     if (lo === between.lo) {
-      return bnum.dec(lo)
+      return bnum.dec(hi)
     }
 
     // invariant
@@ -51,8 +51,8 @@ function BisectingBetween (chars) {
     }
   }
 
-  between.lo = chars ? chars[0] : '0'
-  between.hi = chars ? chars[chars.length - 1] : 'z'
+  between.lo = 'SPECIAL LO VALUE'
+  between.hi = 'SPECIAL HI VALUE'
   between.numbers = bnum
 
   return between
